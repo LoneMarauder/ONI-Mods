@@ -25,3 +25,15 @@ C:\Users\gbdic\OneDrive\Documents\GitHub\OxygenNotIncludedMods\SelfSealingAirloc
 C:\Users\gbdic\OneDrive\Documents\GitHub\OxygenNotIncludedMods\SelfSealingAirlocks\obj\Debug\SelfSealingAirlocks.csproj.CopyComplete
 C:\Users\gbdic\OneDrive\Documents\GitHub\OxygenNotIncludedMods\SelfSealingAirlocks\obj\Debug\SelfSealingAirlocks.dll
 C:\Users\gbdic\OneDrive\Documents\GitHub\OxygenNotIncludedMods\SelfSealingAirlocks\obj\Debug\SelfSealingAirlocks.pdb
+C:\Users\gbdic\OneDrive\Documents\GitHub\ONI-Mods\SelfSealingAirlocksRevived\bin\Debug\SelfSealingAirlocks.dll.config
+C:\Users\gbdic\OneDrive\Documents\GitHub\ONI-Mods\SelfSealingAirlocksRevived\bin\Debug\SelfSealingAirlocks.dll
+C:\Users\gbdic\OneDrive\Documents\GitHub\ONI-Mods\SelfSealingAirlocksRevived\bin\Debug\SelfSealingAirlocks.pdb
+C:\Users\gbdic\OneDrive\Documents\GitHub\ONI-Mods\SelfSealingAirlocksRevived\bin\Debug\0Harmony.dll
+C:\Users\gbdic\OneDrive\Documents\GitHub\ONI-Mods\SelfSealingAirlocksRevived\bin\Debug\Newtonsoft.Json.dll
+C:\Users\gbdic\OneDrive\Documents\GitHub\ONI-Mods\SelfSealingAirlocksRevived\bin\Debug\0Harmony.xml
+C:\Users\gbdic\OneDrive\Documents\GitHub\ONI-Mods\SelfSealingAirlocksRevived\bin\Debug\Newtonsoft.Json.xml
+C:\Users\gbdic\OneDrive\Documents\GitHub\ONI-Mods\SelfSealingAirlocksRevived\obj\Debug\SelfSealingAirlocks.csprojAssemblyReference.cache
+C:\Users\gbdic\OneDrive\Documents\GitHub\ONI-Mods\SelfSealingAirlocksRevived\obj\Debug\SelfSealingAirlocks.csproj.CoreCompileInputs.cache
+C:\Users\gbdic\OneDrive\Documents\GitHub\ONI-Mods\SelfSealingAirlocksRevived\obj\Debug\SelfSealingAirlocks.csproj.CopyComplete
+C:\Users\gbdic\OneDrive\Documents\GitHub\ONI-Mods\SelfSealingAirlocksRevived\obj\Debug\SelfSealingAirlocks.dll
+C:\Users\gbdic\OneDrive\Documents\GitHub\ONI-Mods\SelfSealingAirlocksRevived\obj\Debug\SelfSealingAirlocks.pdb
