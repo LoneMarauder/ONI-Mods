@@ -1,0 +1,3 @@
+title: "Self-sealing Airlocks Revived" 
+description: "A recompile of the Self-sealing Airlocks mod for the new mergedown.  Makes it so doors (other than the pneumatic door) no longer allow liquids or gases to pass if set on Auto."
+staticID: "selfSealingAirlocksRevived" 
