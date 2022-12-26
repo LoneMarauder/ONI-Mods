@@ -60,7 +60,7 @@ namespace SelfSealingAirlocks
             for (int i = 0; i < cells.Count; i++)
             {
                 int cell = cells[i];
-                SimMessages.SetCellProperties(cell, 4);
+                SimMessages.SetCellProperties(cell, 1);
 
 
                 // On opening
