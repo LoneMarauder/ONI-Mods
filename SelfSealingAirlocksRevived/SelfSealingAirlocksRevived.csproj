@@ -74,4 +74,10 @@
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>mkdir $(ProjectDir)ReleaseFiles
+xcopy /y $(ProjectDir)mod.yaml $(ProjectDir)ReleaseFiles
+xcopy /y $(ProjectDir)mod_info.yaml $(ProjectDir)ReleaseFiles
+xcopy /y $(ProjectDir)$(OutDir)SelfSealingAirlocks.dll $(ProjectDir)ReleaseFiles</PostBuildEvent>
+  </PropertyGroup>
 </Project>
