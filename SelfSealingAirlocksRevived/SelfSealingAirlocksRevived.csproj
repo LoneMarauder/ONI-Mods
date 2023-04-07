@@ -78,6 +78,9 @@
     <PostBuildEvent>mkdir $(ProjectDir)ReleaseFiles
 xcopy /y $(ProjectDir)mod.yaml $(ProjectDir)ReleaseFiles
 xcopy /y $(ProjectDir)mod_info.yaml $(ProjectDir)ReleaseFiles
-xcopy /y $(ProjectDir)$(OutDir)SelfSealingAirlocks.dll $(ProjectDir)ReleaseFiles</PostBuildEvent>
+xcopy /y $(ProjectDir)$(OutDir)SelfSealingAirlocks.dll $(ProjectDir)ReleaseFiles
+
+mkdir %25userprofile%25\Documents\Klei\OxygenNotIncluded\mods\local\SelfSealingAirlocksRevived
+xcopy /y $(ProjectDir)ReleaseFiles %25userprofile%25\Documents\Klei\OxygenNotIncluded\mods\local\SelfSealingAirlocksRevived</PostBuildEvent>
   </PropertyGroup>
 </Project>
