@@ -49,8 +49,10 @@ namespace SelfSealingAirlocks
             Door.DoorType doorType = __instance.doorType;
 
             // Exit here if the door type is 'Internal', or the door state is set to 'Opened'
-            if (doorType == Door.DoorType.Internal || controlState == Door.ControlState.Opened)
-            { return true; }
+            if (doorType == Door.DoorType.Internal)
+            {
+                return true;
+            }
 
             // Get the mass of the door (per cell)
             PrimaryElement element = __instance.GetComponent<PrimaryElement>();
@@ -60,18 +62,25 @@ namespace SelfSealingAirlocks
             for (int i = 0; i < cells.Count; i++)
             {
                 int cell = cells[i];
+
                 SimMessages.SetCellProperties(cell, 1);
-
-
                 // On opening
                 if (is_door_open)
                 {
                     MethodInfo method_opened = AccessTools.Method(typeof(Door), "OnSimDoorOpened", null, null);
                     System.Action cb_opened = (System.Action)Delegate.CreateDelegate(typeof(System.Action), __instance, method_opened);
                     HandleVector<Game.CallbackInfo>.Handle handle = Game.Instance.callbackManager.Add(new Game.CallbackInfo(cb_opened, false));
-                    SimMessages.ReplaceAndDisplaceElement(cell, element.ElementID, CellEventLogger.Instance.DoorOpen, mass_per_cell, element.Temperature, byte.MaxValue, 0, handle.index);
-                }
 
+                    if (controlState != Door.ControlState.Opened)
+                    {
+                        SimMessages.ReplaceAndDisplaceElement(cell, element.ElementID, CellEventLogger.Instance.DoorOpen, mass_per_cell, element.Temperature, byte.MaxValue, 0, handle.index);
+                    }
+                    else
+                    {
+                        SimMessages.ClearCellProperties(cell, 1);
+                        SimMessages.ReplaceAndDisplaceElement(cell, SimHashes.Vacuum, CellEventLogger.Instance.DoorOpen, 0.0f, callbackIdx: handle.index);
+                    }
+                }
                 // On closing
                 else
                 {
