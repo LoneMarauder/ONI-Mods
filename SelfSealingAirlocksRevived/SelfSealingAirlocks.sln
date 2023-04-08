@@ -1,9 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30907.101
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelfSealingAirlocksRevived", "SelfSealingAirlocksRevived.csproj", "{3219CD2E-5CEC-4891-8F9B-197A92C86B13}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EBFC2CC5-D811-4DAF-B1F3-B1DD2CF9B6CE}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		SolutionItems\Assembly-CSharp-firstpass.dll = SolutionItems\Assembly-CSharp-firstpass.dll
+		SolutionItems\Assembly-CSharp.dll = SolutionItems\Assembly-CSharp.dll
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
